@@ -2,7 +2,9 @@ require 'spree_core'
 
 module SpreeMultiDomain
   class Engine < Rails::Engine
-
+    
+    engine_name 'spree_multi_domain'
+    
     config.autoload_paths += %W(#{config.root}/lib)
 
     def self.activate
